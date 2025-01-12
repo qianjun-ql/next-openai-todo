@@ -1,5 +1,6 @@
 import { signInAction } from "@/actions/auth-action";
 import { Button } from "@/components/ui/button";
+import UserProfile from "@/components/ui/todos/UserProfile";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <form action={signInAction}>
         <Button>Log In</Button>
       </form>
+      <UserProfile />
     </div>
   );
 }
